@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart - Your Ultimate Grocery Shopping Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">FreshMart</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="banner" id="home">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h1>Fresh Groceries, Delivered Daily</h1>
+                <p>Get farm-fresh produce, organic vegetables, and all your grocery essentials delivered straight to your doorstep. Quality guaranteed, convenience delivered with FreshMart.</p>
+                <a href="#features" class="cta-button">Shop Fresh Now</a>
+            </div>
+            <div class="banner-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="section-header">
+                <h2>Why Choose FreshMart?</h2>
+                <p>Experience fresh, quality groceries with unmatched convenience and service that puts your family's health first</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🥕</div>
+                    <h3>Farm Fresh Produce</h3>
+                    <p>Sourced directly from local farms and organic growers. Get the freshest fruits and vegetables delivered within 24 hours of harvest for maximum nutrition and flavor.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Same Day Delivery</h3>
+                    <p>Order before 2 PM and get your groceries delivered the same day. Temperature-controlled delivery ensures your frozen and fresh items arrive in perfect condition.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Organic & Sustainable</h3>
+                    <p>Wide selection of certified organic products and eco-friendly packaging. Support sustainable farming while nourishing your family with the purest ingredients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number" data-count="50000">0</span>
+                <span class="stat-label">Happy Customers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="1500">0</span>
+                <span class="stat-label">Products Available</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="200">0</span>
+                <span class="stat-label">Local Farms</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="99">0</span>
+                <span class="stat-label">% Customer Satisfaction</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>Stay Fresh with Our Newsletter</h2>
+            <p>Get weekly deals, seasonal produce updates, and healthy recipe ideas delivered to your inbox</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input 
+                    type="email" 
+                    class="newsletter-input" 
+                    placeholder="Enter your email address" 
+                    required
+                    id="emailInput"
+                >
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">FreshMart</div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/lokesh__b__/" class="social-link">📘</a>
+                <a href="https://www.instagram.com/lokesh__b__/" class="social-link">🐦</a>
+                <a href="https://www.instagram.com/lokesh__b__/" class="social-link">📷</a>
+                <a href="https://www.instagram.com/lokesh__b__/" class="social-link">💼</a>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2024 FreshMart. All rights reserved. Fresh groceries delivered with 💚.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
